@@ -1,0 +1,261 @@
+
+/* >>>>>>   HEADER    <<<<<<<*/
+
+/* Header Styles */
+header {
+background-color: rgb(var(--color-base-background-1));
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px 0px;
+margin-bottom: 0px;
+}
+
+header .logo {
+max-width: 100px;
+margin-left: 35px;
+@media screen and (max-width: 800px) {/* Logo being responsive for smaller screens */
+max-width: 80px;
+margin-left: 20px;
+}
+}
+
+/*Navigation List*/
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 50px;
+margin: 0;
+}
+
+/* texts for navigations */
+nav a {
+display: flex;
+text-decoration: none;
+color: rgb(var(--color-base-text));
+font-weight: bold;
+font-size: 18px;
+transition: font-size 0.3s ease;
+/*responsive for smaller screens */
+@media screen and (max-width: 800px) {
+font-size: 13px;
+}
+}
+
+nav a:hover {
+font-size: 20px;
+}
+
+/* cart and login*/
+.user-actions .action-list {
+list-style: none;
+display: flex;
+flex-direction: column;
+}
+
+/*cart*/
+.user-actions a img {
+max-height: 30px;
+margin-left: 0;
+padding-left: 30px;
+}
+
+/*login*/
+.btn-login{
+padding: 4px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-weight: bold;
+font-size: 14px;
+background-color: rgba(221, 59, 48, 0.8);
+color: rgba(255, 255, 240, 0.8);
+text-decoration: none;
+
+/*responsive for smaller screens */
+@media screen and (max-width: 800px) {
+font-size: 12px;
+padding: 4px 10px;
+}
+
+/*transition for hover*/
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-login:hover {
+background-color: #dd3b30;;
+color: black;
+}
+.container {
+width: 50%;
+margin: 0 auto;
+padding: 5px 45px 45px 25px;
+background-color: rgba(255, 255, 240, 0.6);
+border-radius: 15px;
+box-shadow: 0 0 5px #B85042;
+font-family:Arial, Helvetica, sans-serif;
+@media screen and (max-width: 700px) {
+width: 80%;
+padding-left: 0;
+padding-right: 35px;
+}
+}
+
+.container h2 {
+text-align: center;
+padding: 15px;
+@media screen and (max-width: 800px) {
+font-size: 95%;
+text-align: center;
+padding: 25px;
+}
+}
+
+.formContainer {
+display: grid;
+grid-template-columns: 138px auto;
+gap: 22px;
+margin-left: 80px;
+
+}
+
+.formContainer label {
+font-weight: bold;
+white-space: nowrap;
+text-align: right;
+align-self: center;
+justify-self: end;
+
+@media screen and (max-width: 800px) {
+font-size: 80%;
+}
+
+}
+
+.formContainer input {
+width: 350px;
+height: 25px;
+border-radius:5px;
+justify-self: start;
+border: 1px solid rgba(0, 0, 0, 0.2);
+outline: none;
+@media screen and (max-width: 800px) {
+width: 160px;
+height: 20px;
+}
+}
+
+.formContainer button {
+grid-column: 2;
+width: 348px;
+height: 25px;
+border-radius:5px;
+border: none;
+justify-self: start;
+background-color: rgba(184, 80, 66, 0.85);
+@media screen and (max-width: 800px) {
+width: 166px;
+height: 20px;
+}
+}
+
+
+.formContainer button:hover {
+color: black;
+background-color: rgba(184, 80, 66, 1);
+box-shadow: 0 0 1px black;
+font-weight: bold;
+cursor:pointer;
+
+}
+
+.input-wrapper {
+position: relative;
+outline: none;
+}
+
+.input-wrapper select {
+width: 100%;
+height: 30px;
+border-radius: 5px;
+border: 1px solid rgba(0, 0, 0, 0.2);
+padding: 5px;
+font-size: 14px;
+outline: none; /* Remove default outline */
+@media screen and (max-width: 800px) {
+width: 166px;
+height: 25px;
+font-size: 12px;
+padding:0 0 0 3px;
+}
+}
+
+.errors {
+position: absolute;
+top: 105%;
+left: 5px;
+color: red;
+font-size: 0.6em;
+@media screen and (max-width: 800px) {
+font-size: 50%;
+}
+}
+
+::placeholder {
+font-size: 14px;
+padding-left: 3px;
+}
+
+footer {
+position: relative; /* Position relative to contain pseudo-element */
+background: linear-gradient(to bottom, #f8f9fa, rgba(248, 249, 250, 0.3));
+padding: 25px;
+text-align: center;
+}
+
+footer::before,
+footer::after {
+content: '';
+position: absolute;
+top: 0;
+width: 50%;
+height: 1px; /* Thickness of the gradient border */
+}
+
+footer::before {
+right: 0;
+background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(248, 249, 250, 0.3)); /* Gradient border */
+}
+
+footer::after {
+left: 0;
+background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(248, 249, 250, 0.3)); /* Gradient border */
+}
+
+.footer-content {
+max-width: 800px; /* Adjusted max-width */
+margin: 0 auto;
+display: flex;
+flex-direction: column; /* Changed flex-direction to column */
+align-items: center; /* Center align items */
+}
+
+.footer-content p {
+margin: 0;
+}
+
+.footer-content ul {
+list-style-type: none;
+padding: 0;
+}
+
+.footer-content ul li {
+display: inline;
+margin-right: 10px;
+}
+
+.footer-content ul li:last-child {
+margin-right: 0;
+}
+

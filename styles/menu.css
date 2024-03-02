@@ -1,0 +1,55 @@
+/* >>>>>>   BODY    <<<<<<<*/
+body {
+    background-color: rgba(255, 255, 240, 0.3);
+    font-family: "NeueMontreal-Regular", sans-serif;
+    color: #333; /* Dark gray text color */
+    margin: 0;
+    padding: 0;
+}
+
+.food-item {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    margin: 20px;
+}
+
+.container{
+    background-color: rgba(255, 255, 240, 0.8);
+    padding: 20px;
+    flex: 1; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; 
+    margin: 0 10px; 
+}
+
+.couple {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    text-align: center;
+}
+
+.food-description {
+    text-align: center; 
+}
+
+.food-description h4 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.food-description p {
+   margin: 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+.food-item img {
+    width: 220px; /* Ensure images fill the container */
+    height: 180px; /* Set a fixed height for image containers */
+    object-fit: cover; /* Ensure images cover the entire container */
+    border-radius: 8px; /* Rounded corners for images */
+}

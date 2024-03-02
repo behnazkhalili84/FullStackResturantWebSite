@@ -1,0 +1,274 @@
+/* >>>>>>   BODY    <<<<<<<*/
+body {
+    background-color: rgb(var(--color-base-background-1));
+    font-family: "NeueMontreal-Regular", sans-serif;
+    color: rgb(var(--color-base-text));
+    margin: 0;
+    padding: 0;
+}
+
+/* >>>>>>   HEADER    <<<<<<<*/
+
+/* Header Styles */
+header {
+    background-color: rgb(var(--color-base-background-1));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+    margin-bottom: 0px;
+}
+
+header .logo {
+    max-width: 100px;
+    margin-left: 35px;
+    @media screen and (max-width: 800px) {/* Logo being responsive for smaller screens */
+        max-width: 80px; 
+        margin-left: 20px; 
+    }
+}
+
+/*Navigation List*/
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    margin-right: 70px;
+}
+
+/* texts for navigations */ 
+nav a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(var(--color-base-text));
+    font-weight: bold;
+    font-size: 18px;
+    transition: font-size 0.3s ease;
+    /*responsive for smaller screens */
+    @media screen and (max-width: 800px) {
+        font-size: 13px; 
+    }
+}
+
+nav a:hover {
+    font-size: 20px;
+}
+
+/* cart and login*/
+.user-actions .action-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/*cart*/
+.user-actions a img {
+    max-height: 30px;
+    margin-left: 0;
+    padding-left: 30px;
+}
+
+/*login*/
+.btn-login{
+    padding: 4px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #dd3b30;
+    color: white;
+    text-decoration: none;
+
+     /*responsive for smaller screens */
+     @media screen and (max-width: 800px) {
+        font-size: 12px; 
+        padding: 4px 10px; 
+    }
+    
+    /*transition for hover*/
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #333;
+    color: black;
+}
+/* Login Form Styles */
+#login-section {
+    max-width: 400px;
+    padding: 40px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+   }
+
+#login-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: top;
+}
+
+#login-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#login-form input,
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #dd3b30;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#login-form button:hover {
+    color: black;
+}
+
+
+.btn-signup {
+    display: inline-block;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-signup:hover {
+    background-color: #555;
+    color: black;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 800px) {
+    #login-section {
+        max-width: 50%;
+    }
+}
+
+
+/* >>>>>>   FOOTER    <<<<<<<*/
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    position: fixed;
+
+
+}
+
+#map {
+    max-width: 300px; 
+    width: 100%; 
+    border: none;
+    display: flex;
+    margin-left: 20px;
+    @media screen and (max-width: 800px) {/* Logo being responsive for smaller screens */
+        display: none; 
+    }
+}
+
+/* Contact Us and address/ phone number*/
+footer .footer-left {
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 1235px) {/* Logo being responsive for smaller screens */
+        display: none; 
+    }
+
+}
+
+/*contactus style*/
+footer .footer-left a {
+    color: white;
+    margin-top: 0;
+    font-size: 25px;
+    text-decoration: underline;
+    @media screen and (max-width: 800px) {/* Logo being responsive for smaller screens */
+        display: none; 
+    }
+
+}
+
+
+footer address {
+    margin-top: 10px;
+    font-size: large;
+    @media screen and (max-width: 800px) {/* Logo being responsive for smaller screens */
+        display: none; 
+    }
+
+}
+
+/* logo bottom style */
+.footer-middle{
+    width: 250px;
+    @media screen and (max-width: 800px) {/* Logo being responsive for smaller screens */
+        width: 150px;
+        margin: auto; 
+    }
+    }
+
+/* Table contents */
+.footer-right{
+    margin: 15px;
+    @media screen and (max-width: 800px) {/* Logo being responsive for smaller screens */
+        display: none; 
+    }
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 15px;
+}
+
+caption {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+
+

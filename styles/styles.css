@@ -1,0 +1,478 @@
+/* >>>>>>   BODY    <<<<<<<*/
+body {
+    background-color: rgb(var(--color-base-background-1));
+    font-family: "NeueMontreal-Regular", sans-serif;
+    color: rgb(var(--color-base-text));
+    margin: 0;
+    padding: 0;
+}
+
+/* >>>>>>   HEADER    <<<<<<<*/
+
+/* Header Styles */
+
+
+.dropdown {
+    position: relative;
+    top: 20px;
+}
+ 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 240, 1);
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #B85042;
+    z-index: 1000;
+    top: 25px;
+    left: 5px;
+}
+ 
+.dropdown:hover {
+    cursor: pointer;
+}
+ 
+.dropdown-menu a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+}
+ 
+.dropdown-menu a:hover {
+    cursor: pointer;
+    color: rgba(221, 59, 48, 1);
+}
+ 
+body {
+    background-color: rgba(255, 255, 240, 0.3);
+    font-family: "NeueMontreal-Regular", sans-serif;
+    color: rgb(var(--color-base-text));
+    margin: 0;
+    padding: 0;
+}
+
+ 
+/* >>>>>>   HEADER    <<<<<<<*/
+ 
+/* Header Styles */
+
+.dropdown {
+    position: relative;
+    top: 20px;
+}
+ 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 240, 1);
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #B85042;
+    z-index: 1000;
+    top: 25px;
+    left: 5px;
+}
+ 
+.dropdown:hover {
+    cursor: pointer;
+}
+ 
+.dropdown-menu a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+}
+ 
+.dropdown-menu a:hover {
+    cursor: pointer;
+    color: rgba(221, 59, 48, 1);
+}
+ 
+body {
+    background-color: rgba(255, 255, 240, 0.3);
+    font-family: "NeueMontreal-Regular", sans-serif;
+    color: rgb(var(--color-base-text));
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgba(255, 255, 240, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+}
+ 
+header .logo {
+    max-width: 120px;
+    margin-left: 25px;
+    bottom:0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    @media screen and (max-width: 800px) {
+        max-width: 80px;
+        margin-left: 20px;
+    }
+}
+ 
+.logo-link {
+    display: inline-block;
+}
+ 
+/*Navigation List*/
+ 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+}
+ 
+/* texts for navigations */
+nav a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(var(--color-base-text));
+    font-weight: bold;
+    font-size: 20px; /* Adjusted font size */
+    transition: font-size 0.3s ease;
+    /*responsive for smaller screens */
+    @media screen and (max-width: 800px) {
+        font-size: 13px;
+    }
+    padding-top: 25px;
+}
+ 
+nav a:hover {
+    color: #dd3b30; /* Change text color on hover */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Add text shadow on hover */
+}
+ 
+/* cart and login */
+.user-actions .action-list {
+    list-style: none;
+    display: flex;
+    padding-right: 35px;
+}
+ 
+/*cart*/
+.user-actions a img {
+    max-height: 50px;
+}
+ 
+/*login*/
+.btn-login {
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 16px; /* Adjusted font size */
+    color: white;
+    text-decoration: none;
+    background-color: rgba(221, 59, 48, 1);
+    /*responsive for smaller screens */
+    @media screen and (max-width: 800px) {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+    /*transition for hover*/
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+ 
+.btn-login:hover {
+    background-color: rgba(221, 59, 48, 0.5);
+    cursor: pointer;
+}
+ 
+
+
+
+/*** ABOUT US******/
+
+
+p {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 100px;
+    line-height: 1.5;
+    font-size: 1em;
+    text-align: justify;
+    
+    
+}
+
+.container {
+    display: flex;
+    width: 1200px; /* Adjust the width as needed */
+    margin: 0 auto;
+    text-align: justify;
+    justify-content: center;
+   
+}
+
+
+nav a {
+    text-decoration: none;
+    color: rgb(var(--color-base-text));
+    font-weight: bold;
+    font-size: 18px;
+    transition: font-size 0.3s ease;
+}
+
+nav a:hover {
+    font-size: 20px;
+}
+.user-actions .action-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.user-actions a img {
+    max-height: 30px;
+    margin-left: 0;
+    padding-left: 30px;
+}
+
+.btn-login,
+.btn-reservation,
+.btn-order-now {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-login:hover,
+.btn-reservation:hover,
+.btn-order-now:hover {
+    background-color: #333;
+    color: black;
+}
+
+/* Button Styles */
+.btn-login {
+    padding: 4px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #dd3b30;
+    color: white;
+}
+
+.btn-reservation,
+.btn-order-now {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #dd3b30;
+}
+
+
+
+
+
+.hero {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom:40px;
+}
+.team-staff{
+	margin-left: 40px;
+	margin-right: 300px;
+	
+}
+.team-staff p{
+	margin-top:20px;
+	margin-left:40px;
+    margin-right : 100px;
+	margin-bottom: 20px;
+   text-align: justify;
+}
+
+		
+.circle{
+            border-radius: 50%; 
+            width: 250px; 
+            height: 250px; 
+            overflow: hidden; 
+			
+        }
+        
+.image {    width: 50%;
+            margin-right: 0px;
+            text-align: right; 
+			
+        }
+
+.text {
+	width: 50%;
+	margin-left: 20px;
+	 
+}	
+
+.separator-line {
+    border-top: 1px solid rgb(var(--color-base-text));
+}
+
+/* >>>>>>   FOOTER    <<<<<<<*/
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: rgba(248, 249, 250, 0.3);
+    color: white;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    position: relative;
+
+
+}
+
+#map {
+    max-width: 300px; 
+    width: 100%; 
+    border: none;
+    display: flex;
+    margin-left: 20px;
+    @media screen and (max-width: 800px) {/* Logo being responsive for smaller screens */
+        display: none; 
+    }
+}
+
+/* Contact Us and address/ phone number*/
+footer .footer-left {
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 1235px) {/* Logo being responsive for smaller screens */
+        display: none; 
+    }
+
+}
+
+/*contactus style*/
+footer .footer-left a {
+    color: white;
+    margin-top: 0;
+    font-size: 25px;
+    text-decoration: underline;
+    @media screen and (max-width: 800px) {/* Logo being responsive for smaller screens */
+        display: none; 
+    }
+
+}
+
+
+footer address {
+    margin-top: 10px;
+    font-size: large;
+    @media screen and (max-width: 800px) {/* Logo being responsive for smaller screens */
+        display: none; 
+    }
+
+}
+
+/* logo bottom style */
+.footer-middle{
+    width: 250px;
+    @media screen and (max-width: 800px) {/* Logo being responsive for smaller screens */
+        width: 150px;
+        margin: auto; 
+    }
+    }
+
+/* Table contents */
+.footer-right{
+    margin: 15px;
+    @media screen and (max-width: 800px) {/* Logo being responsive for smaller screens */
+        display: none; 
+    }
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 15px;
+}
+
+caption {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+ /* Additional  */
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 20px;
+}
+
+.address, .hours-of-operation {
+    flex: 1;
+}
+.hours-of-operation{
+    margin-right: 100px;
+}
+.address {
+    margin-right: 20px;
+    margin-left:400px;
+}
+
+.address p {
+    margin: 0;
+    line-height: 1.5;
+    color: #333;
+}
+
+.hours-of-operation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hours-of-operation ul li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.hours-of-operation ul li strong {
+    display: inline-block;
+    width: 100px; /* Adjust as needed */
+    color: #222;
+}
+
+
+
