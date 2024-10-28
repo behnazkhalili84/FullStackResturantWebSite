@@ -1,27 +1,9 @@
-WebWiz Group
-Behnaz Khalili
-Ehsan Ghambari
-Sahdan Farahbakhshdarabi
-Yan Deng
-Project Report: FOODI FOODI Restaurant Website Development
+FOODI FOODI Restaurant Website Development
 Introduction
 The WebWiz Group embarked on the development of the FOODi FOODI restaurant website with
 a primary focus on creating an aesthetically pleasing and user-friendly interface. The project
 aimed to integrate best practices in UI design, drawing inspiration from successful restaurant
 websites.
-Team Contributions
-• Ehsan: Login/log out page; The user experience page and all the related pages; Enhancing the
-look of home page and header and menu;
-• Shadan: About Us, Reservation page, and perform CRUD on reservation page, showing
-reservation, editing reservation and cancellation.
-• Behnaz: Related functions of order page, cart order. Order confirmation.
-• Yan’s:-Admin platform to allow administrator to perform CRUD on Menu and Users.
--Redesigned the appearance Order page and Cart page.
-Collaborative Development
-After the initial setup, all team members actively participated in each other's parts, ensuring a
-cohesive and complete website package. This collaborative effort enhanced the overall quality
-and consistency of the project.
-Database Design
 The relationships between tables are as follows:
 • User to Order: One-to-Many
 • User to Reservation: One-to-Many
